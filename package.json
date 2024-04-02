@@ -1,0 +1,48 @@
+{
+  "name": "shiptail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd",
+    "prod": "webpack -p",
+    "deploy": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "email-validator": "^2.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "jsx": "^0.9.89",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "0.14.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^5.2.7",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^1.6.2",
+    "nodemon": "^2.0.4",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
